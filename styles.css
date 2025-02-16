@@ -15,10 +15,10 @@ body {
 .carousel {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-    width: 80%;
+    width: 100%;
     max-width: 600px;
-    overflow: hidden;
 }
 
 .carousel_container {
@@ -53,4 +53,11 @@ body {
 .nav_btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .carousel_container {
+        height: 20vh;
+        width: 100%;
+    }
 }
